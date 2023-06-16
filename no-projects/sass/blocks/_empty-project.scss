@@ -1,0 +1,46 @@
+.empty-project {
+  padding: 24px 0;
+
+  height: 100%;
+}
+
+.empty-project-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+
+  border: 1px solid $border-def-color;
+  border-radius: 4px;
+}
+.empty-project-info__text {
+  margin-bottom: 10px;
+}
+.empty-project-info__button {
+  padding: 0 16px;
+
+  height: 42px;
+
+  border-radius: 4px;
+  background-color: $primary-def-color;
+
+  color: $secondary-def-color;
+
+  &:hover {
+    background-color: $primary-hover-color;
+  }
+
+  &:active {
+    background-color: $primary-active-color;
+  }
+
+  &:disabled {
+    background-color: $primary-disabled-color;
+
+    color: $font-color-disabled;
+
+    cursor: default;
+  }
+}

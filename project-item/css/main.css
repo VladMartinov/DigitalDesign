@@ -1,0 +1,165 @@
+/* Text */
+/* Border */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  /* Mobile */
+}
+@media (min-width: 1025px) {
+  .container {
+    width: 100%;
+  }
+}
+.container_full-height {
+  height: 100%;
+}
+
+.button {
+  padding: 0 16px;
+  height: 42px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button_nav {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+.button_nav:hover {
+  background-color: #ececef;
+  color: #1c1c1c;
+}
+.button_nav:active {
+  background-color: #ffffff;
+  color: #1c1c1c;
+}
+.button_primary {
+  background-color: #1f75cb;
+  color: #ffffff;
+}
+.button_primary:hover {
+  background-color: #1068bf;
+}
+.button_primary:active {
+  background-color: #0b5cad;
+}
+.button_primary:disabled {
+  background-color: #dcdcde;
+  color: #8e8e8e;
+  cursor: default;
+}
+.button_icon {
+  padding: 9px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+}
+.button_icon svg {
+  fill: #1c1c1c;
+}
+.button_icon:hover {
+  border-color: rgba(18, 19, 22, 0.5);
+  background-color: #ececef;
+}
+.button_icon:active {
+  border-color: #1c1c1c;
+  background-color: #dcdcde;
+}
+.button_icon:disabled {
+  border-color: rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  cursor: default;
+}
+.button_icon:disabled svg {
+  fill: #8e8e8e;
+}
+
+.text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 400px;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+}
+.text_black {
+  color: #000000;
+}
+.text_prim {
+  color: #1c1c1c;
+}
+.text_disabled {
+  color: #8e8e8e;
+}
+
+.project-item {
+  display: flex;
+  padding: 0 16px 8px;
+  width: 100%;
+  min-height: 65px;
+  border-bottom: 1px solid #1c1c1c;
+}
+.project-item:hover .project-item-content {
+  margin-right: 16px;
+}
+.project-item:hover .project-item-more {
+  display: flex;
+}
+
+.project-item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+}
+
+.project-item-content__title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  position: relative;
+  max-height: 38px;
+  overflow: hidden;
+  /* If we want to use clear css ellipsis */
+}
+
+.project-item-content-info {
+  display: flex;
+}
+
+.project-content-info__id {
+  margin-right: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.project-content-info__text {
+  flex-shrink: 0;
+  margin-right: 16px;
+}
+
+.project-content-info__user-info {
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.project-item-more {
+  display: none;
+  align-items: center;
+}
+
+/*# sourceMappingURL=main.css.map */
