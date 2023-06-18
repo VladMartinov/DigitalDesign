@@ -1,0 +1,121 @@
+.project-item {
+  display: flex;
+
+  padding: 0 16px 8px;
+
+  width: 100%;
+  min-height: 65px;
+
+  border-bottom: 1px solid $border-active-color;
+
+  &:hover {
+    .project-item-content {
+      margin-right: 16px;
+    }
+
+    .project-item-more {
+      display: flex;
+    }
+  }
+}
+
+.project-item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 100%;
+  overflow: hidden;
+}
+
+.project-item-content__title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+  position: relative;
+
+  max-height: 38px;
+  overflow: hidden;
+
+  /* If we want to use clear css ellipsis */
+  //&::after {
+  //  content: "...";
+  //  position: absolute;
+  //  bottom: 0;
+  //  right: 0;
+  //}
+
+  //& p::after {
+  //  content: "\0000a0";
+  //  position: absolute;
+  //  width: 100%;
+  //  z-index: 1;
+  //  background-color: $font-color-sec;
+  //}
+}
+
+.project-item-content-info {
+  display: flex;
+}
+
+.project-content-info__id {
+  margin-right: 16px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.project-content-info__text {
+  flex-shrink: 0;
+  margin-right: 16px;
+}
+.project-content-info__user-info {
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.project-item-more {
+  display: none;
+  align-items: center;
+}
+.project-item-more-wrapper {
+  position: relative;
+}
+.dropdown {
+  position: absolute;
+
+  padding: 8px 0;
+
+  right: 0;
+  top: 44px;
+
+  background-color: $secondary-def-color;
+  box-shadow: 0px 0px 4px $dropdown-shadow-color;
+
+  &_hidden {
+    display: none;
+  }
+}
+.dropdown__button {
+  padding: 8px 16px;
+
+  width: 100%;
+
+  text-align: left;
+
+  background-color: $secondary-def-color;
+
+  &:hover {
+    background-color: $secondary-hover-color;
+  }
+
+  &:active {
+    background-color: $secondary-active-color;
+  }
+
+  &_disabled {
+    pointer-events: none;
+    color: $font-color-disabled;
+  }
+}
