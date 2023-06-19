@@ -11,7 +11,7 @@ function EventClick(eventDOMItem) {
   let projectItemBtns = document.querySelectorAll(".project-item-more");
   let taskItemBtns = document.querySelectorAll(".task-item-more");
 
-  if (navDOM.contains(eventDOMItem)) {
+  if (navDOM.contains(eventDOMItem) && navDOM != eventDOMItem) {
     NavBarEvent(navDOM, eventDOMItem);
   } else if (navProfileDOM.contains(eventDOMItem)) {
     NavProfileEvent(navProfileDOM, eventDOMItem);
