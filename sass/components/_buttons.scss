@@ -7,7 +7,7 @@
 
   cursor: pointer;
 
-  &_nav {
+  &__nav {
     border: 1px solid $secondary-def-color;
 
     color: $secondary-def-color;
@@ -25,7 +25,7 @@
     }
   }
 
-  &_primary {
+  &__primary {
     background-color: $primary-def-color;
 
     color: $secondary-def-color;
@@ -47,7 +47,7 @@
     }
   }
 
-  &_icon {
+  &__icon {
     padding: 9px;
 
     border: 1px solid $border-def-color;

@@ -1,11 +1,11 @@
 // Base
 @import "./../../sass/base/vars";
-@import "./base/reset";
+@import "./../../sass/base/reset";
 @import "./../../sass/base/base";
-@import "./base/base";
+@import "./../../sass/base/full-height";
 
 // Component
 @import "./../../sass/components/font";
 
 // Blocks
-@import "./blocks/empty-project";
+@import "./empty-project";
