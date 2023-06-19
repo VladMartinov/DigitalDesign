@@ -1,0 +1,118 @@
+/* Text */
+/* Border */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+button {
+  background-color: transparent; }
+
+button:focus,
+button:active {
+  outline: none; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+img,
+svg {
+  display: block; }
+
+.container {
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  /* Mobile */ }
+  @media (min-width: 1025px) {
+    .container {
+      width: 100%; } }
+  .container_full-height {
+    height: 100%; }
+
+html,
+body {
+  height: 100%; }
+
+.text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 400px;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff; }
+  .text_black {
+    color: #000000; }
+  .text_prim {
+    color: #1c1c1c; }
+  .text_disabled {
+    color: #8e8e8e; }
+
+.button {
+  padding: 0 16px;
+  height: 42px;
+  border-radius: 4px;
+  cursor: pointer; }
+  .button__nav {
+    border: 1px solid #ffffff;
+    color: #ffffff; }
+    .button__nav:hover {
+      background-color: #ececef;
+      color: #1c1c1c; }
+    .button__nav:active {
+      background-color: #ffffff;
+      color: #1c1c1c; }
+  .button__primary {
+    background-color: #1f75cb;
+    color: #ffffff; }
+    .button__primary:hover {
+      background-color: #1068bf; }
+    .button__primary:active {
+      background-color: #0b5cad; }
+    .button__primary:disabled {
+      background-color: #dcdcde;
+      color: #8e8e8e;
+      cursor: default; }
+  .button__icon {
+    padding: 9px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: #ffffff; }
+    .button__icon svg {
+      fill: #1c1c1c; }
+    .button__icon:hover {
+      border-color: rgba(18, 19, 22, 0.5);
+      background-color: #ececef; }
+    .button__icon:active {
+      border-color: #1c1c1c;
+      background-color: #dcdcde; }
+    .button__icon:disabled {
+      border-color: rgba(0, 0, 0, 0.15);
+      background-color: #ffffff;
+      cursor: default; }
+      .button__icon:disabled svg {
+        fill: #8e8e8e; }
+
+.empty-project {
+  padding: 24px 0;
+  height: 100%; }
+
+.empty-project__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px; }
+
+.empty-project__text {
+  margin-bottom: 10px; }
+
+/*# sourceMappingURL=main.css.map */

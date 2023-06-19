@@ -1,0 +1,9 @@
+.status-item {
+  padding: 0 8px;
+
+  border-radius: 4px;
+
+  &_draft {
+    background-color: $border-bronze-color;
+  }
+}

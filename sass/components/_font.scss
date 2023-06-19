@@ -1,0 +1,19 @@
+.text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 400px;
+  font-size: 14px;
+  line-height: 19px;
+  color: $font-color-sec;
+
+  &_black {
+    color: #000000;
+  }
+
+  &_prim {
+    color: $font-color-prim;
+  }
+
+  &_disabled {
+    color: $font-color-disabled;
+  }
+}
