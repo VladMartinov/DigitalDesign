@@ -1,0 +1,79 @@
+.task-item {
+  display: flex;
+
+  padding: 0 16px 8px;
+
+  width: 100%;
+  min-height: 69px;
+
+  border-bottom: 1px solid $border-active-color;
+
+  &:hover {
+    .task-item-content {
+      margin-right: 16px;
+    }
+
+    .task-item-more {
+      display: flex;
+    }
+  }
+}
+
+.task-item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 100%;
+  overflow: hidden;
+}
+
+.task-item-content-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.task-item__title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+  margin-right: 16px;
+
+  max-height: 38px;
+  overflow: hidden;
+}
+.roject-item__profile {
+  flex-shrink: 0;
+}
+
+.task-item-content-info {
+  display: flex;
+}
+
+.task-content__id {
+  margin-right: 16px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.task-content__text {
+  flex-shrink: 0;
+  margin-right: 16px;
+}
+.task-content-info__status {
+  margin-right: 16px;
+}
+.task-content__user-info {
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.task-item-more {
+  display: none;
+  align-items: center;
+}
+.task-item-more__wrapper {
+  position: relative;
+}
