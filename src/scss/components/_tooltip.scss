@@ -1,0 +1,33 @@
+.tool-tip-wrapper {
+  position: absolute;
+
+  top: 40px;
+  left: 5px;
+}
+.tool-tip {
+  position: relative;
+  padding: 16px;
+
+  max-width: 400px;
+
+  box-shadow: 0px 0px 4px $dropdown-shadow-color;
+  border-radius: 4px;
+  background: $secondary-def-color;
+
+  &::before {
+    position: absolute;
+    content: "";
+
+    width: 24px;
+    height: 24px;
+
+    top: -21px;
+    right: 50%;
+
+    //z-index: 9;
+
+    transform: translateX(50%);
+
+    background-image: url("./../../img/tooltip/tooltip-polyhon-icon.svg");
+  }
+}
