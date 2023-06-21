@@ -1,2 +1,3 @@
 # DigitalDesign
-DigitalDesign Frontend School
+
+DigitalDesign Frontend School, homework №3
