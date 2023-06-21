@@ -1,4 +1,3 @@
-import "./register.js";
 import "@/scss/style.scss";
 import { LoadComponent } from "./loadComponents.js";
 import { EventClick } from "./eventFunctions/eventClick.js";
