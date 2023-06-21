@@ -18,7 +18,7 @@ function SelectQuery(eventTargetDOM, url, typePage) {
   let urlGETAndDELETE = typePage === "projects" ? url + typePage + `/${idProject}` : url + typePage + `/${idTask}`;
 
   console.log("#############");
-  console.log(`ID post: ${idProject}`);
+  console.log(`ID project: ${idProject}`);
   console.log(`ID task: ${idTask}`);
   console.log("#############");
 
