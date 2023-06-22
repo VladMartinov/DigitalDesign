@@ -1,0 +1,16 @@
+.buttons {
+  padding: 15px 0;
+}
+.buttons-rows__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.buttons-rows__item {
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+.buttons-rows__title {
+  margin-bottom: 15px;
+}

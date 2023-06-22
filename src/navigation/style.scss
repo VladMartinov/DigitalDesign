@@ -1,0 +1,21 @@
+.header {
+  padding: 24px 0;
+
+  background-color: $primary-def-color;
+}
+.header__wrapper {
+  display: flex;
+
+  justify-content: flex-end;
+}
+
+.header__nav {
+  margin-right: 24px;
+
+  display: flex;
+}
+.header__item {
+  &:not(:last-child) {
+    margin-right: 24px;
+  }
+}
