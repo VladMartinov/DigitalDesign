@@ -1,0 +1,41 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+input, button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button {
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+img,
+svg {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}

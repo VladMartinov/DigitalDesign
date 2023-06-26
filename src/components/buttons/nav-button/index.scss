@@ -1,0 +1,22 @@
+@import "@/components/buttons/index";
+
+.button__nav {
+  border: 1px solid $secondary-def-color;
+
+  color: $secondary-def-color;
+
+  &:hover {
+    background-color: $secondary-hover-color;
+
+    color: $font-color-prim;
+  }
+
+  &:active,
+  &_active {
+    background-color: $secondary-def-color;
+
+    &.text {
+      color: $font-color-prim;
+    }
+  }
+}

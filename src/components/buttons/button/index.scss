@@ -1,0 +1,53 @@
+@import "@/components/buttons/index";
+
+.button__primary {
+  background-color: $primary-def-color;
+
+  color: $secondary-def-color;
+
+  &:hover {
+    background-color: $primary-hover-color;
+  }
+
+  &:active,
+  &_active {
+    background-color: $primary-active-color;
+  }
+
+  &:disabled {
+    background-color: $primary-disabled-color;
+
+    color: $font-color-disabled;
+
+    cursor: default;
+  }
+}
+
+.button__second {
+  background-color: $primary-def-color;
+
+  border-radius: 4px;
+  border: 1px solid $border-def-color;
+  background-color: $secondary-def-color;
+
+  color: $font-color-prim;
+
+  &:hover {
+    border-color: $border-hover-color;
+    background-color: $secondary-hover-color;
+  }
+
+  &:active,
+  &_active {
+    border-color: $border-active-color;
+    background-color: $secondary-active-color;
+  }
+
+  &:disabled {
+    border-color: $border-disabled-color;
+
+    color: $font-color-disabled;
+
+    cursor: default;
+  }
+}
