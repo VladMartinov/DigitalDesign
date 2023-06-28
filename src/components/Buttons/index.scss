@@ -1,0 +1,16 @@
+.button {
+  padding: 0 16px;
+
+  height: 42px;
+  
+  width: fit-content;
+  min-width: 42px;
+
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  &_small {
+    padding: 0 9px;
+  }
+}

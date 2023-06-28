@@ -1,0 +1,7 @@
+.svg-icon {
+  fill: currentColor;
+
+  &_flipped {
+    transform: rotate(180deg);
+  }
+}
