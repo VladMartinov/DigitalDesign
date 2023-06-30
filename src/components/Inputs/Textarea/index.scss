@@ -13,6 +13,8 @@
 
     resize: none;
 
+    overflow-y: hidden;
+
     &::placeholder {
       font-size: 14px;
       font-family: "Open Sans", sans-serif;
