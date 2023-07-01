@@ -1,0 +1,93 @@
+.input__wrapper,
+.input-small__wrapper {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+
+  border-radius: 4px;
+  background-color: $secondary-def-color;
+
+  &:hover {
+    border-color: $border-hover-color;
+  }
+
+  &:active {
+    border-color: $border-active-color;
+  }
+
+  &_error {
+    border-color: $font-color-error;
+  }
+
+  &_disabled {
+    border-color: $border-disabled-color;
+    color: $font-color-disabled;
+  }
+}
+
+.input__wrapper,
+.input-small__wrapper {
+  &_disabled {
+    background-color: $primary-disabled-color;
+  }
+}
+.input__wrapper {
+  padding: 10px 8px 10px 12px;
+  border: 1px solid $border-def-color;
+}
+
+.input-small__wrapper {
+  padding: 8px 8px 8px 12px;
+  border-bottom: 1px solid $border-def-color;
+}
+
+.input {
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  &::placeholder {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+
+    color: $font-color-placeholder;
+  }
+
+  &:disabled {
+    background-color: transparent;
+  }
+}
+
+.input__button-clear,
+.input__button-search {
+  &:disabled {
+    cursor: default;
+  }
+}
+
+.input__button-clear {
+  margin-right: 8px;
+
+  color: $border-def-color;
+}
+
+.input__button-search {
+  color: $font-color-disabled;
+
+  &:disabled {
+    cursor: default;
+  }
+}
+
+.input-small__button-search {
+  color: $font-color-disabled;
+  
+  &:disabled {
+    color: $font-color-placeholder;
+   
+    cursor: default;
+  }
+}

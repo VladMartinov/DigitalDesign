@@ -1,0 +1,20 @@
+.empty-items {
+  padding: 24px 0;
+
+  height: 100%;
+}
+
+.empty-items__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+
+  border: 1px solid $border-def-color;
+  border-radius: 4px;
+}
+.empty-items__text {
+  margin-bottom: 10px;
+}
