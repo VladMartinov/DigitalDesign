@@ -1,0 +1,19 @@
+.status-item {
+  display: inline-block;
+
+  padding: 0 8px;
+
+  border-radius: 4px;
+
+  &_draft {
+    background-color: $border-bronze-color;
+  }
+
+  &_not-active {
+    background-color: $font-color-disabled;
+  }
+
+  &_active {
+    background-color: $primary-def-color;
+  }
+}
