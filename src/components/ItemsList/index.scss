@@ -1,0 +1,29 @@
+.section-items {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.section-items__wrapper {
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $border-def-color;
+}

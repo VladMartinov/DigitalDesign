@@ -1,0 +1,104 @@
+.button {
+  display: flex;
+  align-items: center;
+
+  padding: 0 8px 0 16px;
+
+  height: 42px;
+  width: fit-content;
+  min-width: 42px;
+
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  &_small {
+    padding: 0 9px;
+  }
+}
+
+.button__text {
+  padding-right: 8px;
+}
+
+.button__nav {
+  border: 1px solid $secondary-def-color;
+
+  &:hover {
+    background-color: $secondary-hover-color;
+
+    & .text {
+      color: $font-color-prim;
+    }
+  }
+
+  &:active,
+  &.active {
+    background-color: $secondary-def-color;
+
+    & .text {
+      color: $font-color-prim;
+    }
+  }
+}
+
+.button__primary {
+  background-color: $primary-def-color;
+
+  &,
+  & .text {
+    color: $secondary-def-color;
+  }
+
+  &:hover {
+    background-color: $primary-hover-color;
+  }
+
+  &:active,
+  &.active {
+    background-color: $primary-active-color;
+  }
+
+  &_disabled {
+    background-color: $primary-disabled-color;
+
+    &,
+    & .text {
+      color: $font-color-disabled;
+    }
+
+    cursor: default;
+  }
+}
+
+.button__second {
+  border: 1px solid $border-def-color;
+  background-color: $secondary-def-color;
+
+  &,
+  & .text {
+    color: $font-color-prim;
+  }
+
+  &:hover {
+    border-color: $border-hover-color;
+    background-color: $secondary-hover-color;
+  }
+
+  &:active,
+  &.active {
+    border-color: $border-active-color;
+    background-color: $secondary-active-color;
+  }
+
+  &_disabled {
+    border-color: $border-disabled-color;
+
+    &,
+    & .text {
+      color: $font-color-disabled;
+    }
+
+    cursor: default;
+  }
+}
