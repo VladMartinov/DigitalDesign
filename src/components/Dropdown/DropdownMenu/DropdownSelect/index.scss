@@ -1,0 +1,44 @@
+.dropdown-select {
+  position: absolute;
+
+  padding: 8px 0;
+
+  right: 0;
+  top: 48px;
+  z-index: 9;
+
+  width: 100%;
+  max-height: 350px;
+
+  background-color: $secondary-def-color;
+  box-shadow: 0px 0px 4px $dropdown-shadow-color;
+
+  overflow-y: auto;
+
+  &_hidden {
+    display: none;
+  }
+}
+.dropdown-select__button {
+  padding: 8px 16px;
+
+  width: 100%;
+  
+  background-color: $secondary-def-color;
+  
+  text-align: left;
+
+  &:hover {
+    background-color: $secondary-hover-color;
+  }
+
+  &:active,
+  &.active {
+    background-color: $secondary-active-color;
+  }
+
+  &_disabled {
+    pointer-events: none;
+    color: $font-color-disabled;
+  }
+}
