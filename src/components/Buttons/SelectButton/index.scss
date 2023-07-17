@@ -1,0 +1,47 @@
+.button-select__wrapper {
+  display: flex;
+  align-items: center;
+
+  padding: 8px 9px 8px 12px;
+
+  width: 100%;
+
+  border-radius: 4px;
+  border: 1px solid $border-def-color;
+  background-color: $secondary-def-color;
+
+  cursor: pointer;
+
+  &_active {
+    border-color: $border-active-color;
+  }
+
+  &_disabled {
+    border-color: $border-disabled-color;
+    background-color: $primary-disabled-color;
+
+    cursor: default;
+  }
+}
+
+.button-select__value-selected {
+  margin-right: 8px;
+
+  width: 100%;
+}
+.button-select__button-clear {
+  margin-right: 8px;
+
+  color: $border-def-color;
+
+  &:disabled {
+    cursor: default;
+  }
+}
+.button-select__button-open {
+  color: $font-color-disabled;
+
+  &:disabled {
+    cursor: default;
+  }
+}

@@ -1,0 +1,14 @@
+.empty-items__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  flex-grow: 1;
+
+  border: 1px solid $border-def-color;
+  border-radius: 4px;
+}
+.empty-items__text {
+  margin-bottom: 10px;
+}
