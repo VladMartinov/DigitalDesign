@@ -1,0 +1,45 @@
+.task__aside {
+  padding: 24px;
+  width: 300px;
+
+  flex-shrink: 0;
+
+  border-left: 1px solid $border-def-color;
+  background-color: $secondary-def-color;
+}
+
+.task__aside-row {
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.task__aside-line {
+  height: 1px;
+  width: 100%;
+
+  background-color: $border-def-color;
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.task__aside-label {
+  display: block;
+
+  margin-bottom: 8px;
+}
+.task__asize-spent-input {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+.task__asize-input {
+  margin-right: 8px;
+}

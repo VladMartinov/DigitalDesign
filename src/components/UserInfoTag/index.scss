@@ -1,0 +1,14 @@
+.user-tag {
+  display: flex;
+  align-items: center;
+
+  padding: 8px 16px;
+}
+.user-tag__image {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+.user-tag__name {
+  display: block;
+}
