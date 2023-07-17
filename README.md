@@ -1,4 +1,4 @@
-# homework-final-project
+# homework-final-project-v2
 
 ## Project setup
 ```
