@@ -1,0 +1,159 @@
+.modal-photo {
+  position: absolute;
+
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: 19;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $border-def-color;
+
+  &.hidden {
+    display: none;
+  }
+}
+.modal-photo__wrapper {
+  position: fixed;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+
+  width: 640px;
+  height: 640px;
+
+  border-radius: 4px;
+  background-color: $secondary-def-color;
+  box-shadow: 0px 0px 30px 0px $modal-shadow-color;
+}
+
+.modal-photo__title {
+  padding: 16px;
+
+  width: 100%;
+
+  border-bottom: 1px solid $border-def-color;
+}
+
+.modal-photo__rows-wrapper {
+  padding: 24px;
+
+  flex-grow: 1;
+
+  border-bottom: 1px solid $border-def-color;
+}
+.modal-photo__row {
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.modal-photo__file-wrapper {
+  padding: 12px 10px;
+
+  display: flex;
+  align-items: center;
+
+  border-radius: 4px;
+  border: 1px solid $border-def-color;
+  background-color: $secondary-def-color;
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  &:hover {
+    border-color: $border-hover-color;
+  }
+
+  &.error {
+    border-color: $error-color;
+  }
+}
+.modal-photo__file {
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 8px;
+
+  width: 100%;
+}
+.modal-photo__file-title {
+  display: block;
+
+  margin-bottom: 8px;
+}
+.modal-photo__file-info {
+  display: block;
+}
+
+.error-message {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.modal-photo__image {
+  padding: 12px 10px;
+
+  width: 320px;
+  height: 324px;
+
+  border-radius: 4px;
+  background-color: $secondary-def-color;
+
+  object-fit: cover;
+}
+
+.drop-container {
+  display: block;
+
+  padding: 10px;
+  width: 100%;
+
+  border-radius: 4px;
+  border: 1px dashed $border-def-color;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  &:hover {
+    border-color: $border-hover-color;
+  }
+}
+.modal-photo__input {
+  opacity: 0;
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+  display: block;
+  margin-left: -10000px;
+  background: transparent;
+  font-size: 0;
+}
+
+.modal-photo__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  
+  padding: 24px;
+
+  & > *:not(:last-child) {
+    margin-right: 8px;
+  }
+}

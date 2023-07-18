@@ -1,0 +1,45 @@
+.input-pass__wrapper {
+  display: flex;
+  align-items: center;
+
+  padding: 10px 9px 10px 12px;
+
+  width: 100%;
+
+  border-radius: 4px;
+  border: 1px solid $border-def-color;
+  background-color: $secondary-def-color;
+
+  &:hover {
+    border-color: $border-hover-color;
+  }
+  &.active {
+    border-color: $border-active-color;
+  }
+  &.error {
+    border-color: $error-color;
+  }
+  &.disabled {
+    border-color: $border-disabled-color;
+    background-color: $primary-disabled-color;
+  }
+}
+.input-pass {
+  margin-right: 3px;
+
+  width: 100%;
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover, 
+  &:-webkit-autofill:focus {
+    -webkit-text-fill-color: $font-color-prim;
+    -webkit-box-shadow: 0 0 0px 40rem $secondary-def-color inset;
+  }
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+.input-pass__icon {
+  color: $font-color-disabled;
+}
