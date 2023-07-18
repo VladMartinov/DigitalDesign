@@ -1,0 +1,79 @@
+.datepicker-form {
+  position: absolute;
+
+  top: 46px;
+  left: 0;
+
+  padding: 16px;
+
+  background-color: $secondary-def-color;
+  box-shadow: 0px 8px 32px 0px $datepicker-shadow-color;
+
+  &.hidden {
+    display: none;
+  }
+}
+
+.datepicker-form__top {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 16px;
+}
+
+.datepicker-form__prev-button,
+.datepicker-form__next-button {
+  color: $font-color-disabled;
+
+  cursor: pointer;
+}
+.datepicker-form__prev-button {
+  margin-right: 14px;
+}
+
+.datepicker-form__dropdown-selects {
+  display: flex;
+  align-items: center;
+
+  margin-right: 14px;
+}
+.datepicker-form__dropdown-wrapper {
+  &:not(:last-child) {
+    margin-right: 8px;
+
+    width: 130px;
+  }
+}
+
+.datepicker-form__name-row,
+.datepicker-form__row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+
+  column-gap: 4px;
+}
+.datepicker-form__name-row {
+  border-bottom: 1px solid $border-def-color;
+  & .datepicker-form__day {
+    cursor: default;
+  }
+}
+
+.datepicker-form__day {
+  padding: 10px;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  &.current,
+  &.active {
+    border-radius: 24px;
+  }
+  &.current {
+    border: 1px solid $primary-def-color;
+  }
+  &.active {
+    background-color: $primary-def-color;
+  }
+}

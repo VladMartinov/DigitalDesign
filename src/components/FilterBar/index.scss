@@ -1,0 +1,40 @@
+.filters {
+  margin-bottom: 24px;
+}
+.filters__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.filters__input {
+  margin-right: 24px;
+  width: 100%;
+}
+.filters__filter-form-wrapper {
+  margin-right: 24px;
+}
+.filters__filter-form {
+  position: relative;
+}
+.filters__select {
+  display: flex;
+  align-items: center;
+
+  max-width: 214px;
+
+  flex-shrink: 0;
+  
+  &:not(:last-child) {
+    margin-right: 24px;
+  }
+}
+.filters__select-order {
+  
+}
+.filters__add-button {
+  &.user {
+    margin-left: 120px;
+
+    flex-shrink: 0;
+  }
+}
